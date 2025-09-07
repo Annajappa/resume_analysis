@@ -15,8 +15,8 @@ const upload = multer({
   }
 });
 
-router.post('/upload', upload.single('resume'), resumeController.uploadResume);
-router.get('/', resumeController.getAllResumes);
-router.get('/:id', resumeController.getResumeById);
+router.post('/api//upload', upload.single('resume'), resumeController.uploadResume);
+router.get('/api/', resumeController.getAllResumes);
+router.get('api/:id', resumeController.getResumeById);
 
 module.exports = router;
