@@ -15,8 +15,10 @@ const upload = multer({
   }
 });
 
-router.post('/api//upload', upload.single('resume'), resumeController.uploadResume);
-router.get('/api/', resumeController.getAllResumes);
-router.get('api/:id', resumeController.getResumeById);
+// Correct routes
+router.post('/api/upload', upload.single('resume'), resumeController.uploadResume);
+router.get('/api', resumeController.getAllResumes);
+router.get('/api/:id', resumeController.getResumeById);
 
 module.exports = router;
+
