@@ -15,7 +15,7 @@ export default function ResumeUploader({ onAnalysis }) {
 
     setLoading(true);
     try {
-      const res = await api.post("/resumes/upload", formData);
+      const res = await api.post("https://resume-analysis-1-pz4k.onrender.com/api/upload", formData);
       onAnalysis(res.data); // send data to parent
     } catch (err) {
       console.error(err);
