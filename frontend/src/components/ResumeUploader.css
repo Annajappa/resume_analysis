@@ -1,0 +1,13 @@
+.uploader {
+  padding: 20px;
+  border: 2px dashed #aaa;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.uploader input {
+  margin-bottom: 15px;
+}

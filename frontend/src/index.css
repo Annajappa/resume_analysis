@@ -1,0 +1,15 @@
+/* Apply modern clean font */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.page {
+  padding: 20px;
+}
