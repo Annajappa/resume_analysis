@@ -18,6 +18,6 @@ app.use(cors({ origin: CLIENT_ORIGIN }));
 app.use(express.json({ limit: '2mb' }));
 
 app.get('/', (_req, res) => res.send('Resume Analyzer API is running'));
-app.use('/resumes', resumeRoutes);
+app.use('/api/resumes', resumeRoutes);
 
 app.listen(PORT, () => console.log(`API on http://localhost:${PORT}`));
