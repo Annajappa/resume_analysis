@@ -1,6 +1,12 @@
 require('dotenv').config();
 const express = require('express');
-const cors = require('cors');
+const cors = require("cors");
+
+app.use(cors({
+  origin: "https://resume-analysis-3-1kj4.onrender.com/", // your frontend Render URL
+  methods: ["GET", "POST", "OPTIONS"],
+  credentials: true
+}));
 
 const resumeRoutes = require('./routes/resumeRoutes');
 
